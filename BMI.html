@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>BMI指標計算</title>
+    <link rel="stylesheet" href="css/BMI.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <span class="text"></span>
+            <div class="headerInfo">
+                <div class="bmiLogo"><img src="images/BMICLogo.png" /></div>
+                <div class="bmiDataInfo">
+                    <form name="myForm" onsubmit="return verify()" method="post">
+                        <p>身高 cm</p>
+                        <input type="text" class="bmiCM" name="bmiCM" placeholder="輸入身高cm">
+                        <p>體重 kg</p>
+                        <input type="text" class="bmiKG" name="bmiKG" placeholder="輸入體重kg">
+                    </form>
+                </div>
+                <div class="bmiCheck">看結果</div><span class="result"></span>
+            </div>
+        </header>
+        <section class="bmiRecords">
+            <h4 class="recordsTitle">BMI紀錄</h4>
+            <ul class="list"></ul>
+        </section>
+        <footer>
+            <img src="images/BMICLogo.png" width="55" />
+        </footer>
+    </div>
+    <script src="js/BMI.js"></script>
+</body>
+
+</html>
